@@ -3,7 +3,7 @@ import s from './ContactsList.module.css';
 
 export const ContactsList = ({ contactFilter, deleteContact }) => {
   return (
-    <ul className={s.contactList}>
+    <ul className={s.contactsList}>
       {contactFilter().map(({ id, name, number }) => {
         return (
           <li className={s.contactItem} key={id}>
